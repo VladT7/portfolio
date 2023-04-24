@@ -1,14 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/header";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import LandingPage from "./components/LandingPage";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      <LandingPage></LandingPage>
+      <Projects></Projects>
+      <About></About>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
