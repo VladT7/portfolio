@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Projects from "./components/Projects";
 import LandingPage from "./components/LandingPage";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <LandingPage></LandingPage>
       <Projects></Projects>
       <About></About>
+      <Contact></Contact>
       <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
