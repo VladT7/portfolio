@@ -1,37 +1,32 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import ProjectCard from "./ProjectCard";
 function Projects() {
   return (
     <Container>
       <Row className="mt-5">
         <Col xs={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/300x200" />
-            <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>A short description of project 1 goes here.</Card.Text>
-              <Button variant="primary">Learn More</Button>
-            </Card.Body>
-          </Card>
+          <ProjectCard
+            title={"title"}
+            description={"A short description of project 1 goes here"}
+            imageUrl={"https://via.placeholder.com/300x200"}
+            projectUrl="https://www.google.com"
+          ></ProjectCard>
         </Col>
         <Col xs={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/300x200" />
-            <Card.Body>
-              <Card.Title>Project 2</Card.Title>
-              <Card.Text>A short description of project 2 goes here.</Card.Text>
-              <Button variant="primary">Learn More</Button>
-            </Card.Body>
-          </Card>
+          <ProjectCard
+            title={"title"}
+            description={"A short description of project 2 goes here"}
+            imageUrl={"https://via.placeholder.com/300x200"}
+            projectUrl="https://www.google.com"
+          ></ProjectCard>
         </Col>
         <Col xs={12} md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/300x200" />
-            <Card.Body>
-              <Card.Title>Project 3</Card.Title>
-              <Card.Text>A short description of project 3 goes here.</Card.Text>
-              <Button variant="primary">Learn More</Button>
-            </Card.Body>
-          </Card>
+          <ProjectCard
+            title={"title"}
+            description={"A short description of project 3 goes here"}
+            imageUrl={"https://via.placeholder.com/300x200"}
+            projectUrl="https://www.google.com"
+          ></ProjectCard>
         </Col>
       </Row>
     </Container>
