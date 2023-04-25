@@ -2,7 +2,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
 function About() {
   return (
-    <Container>
+    <Container style={{ marginBottom: 20 }}>
       <Row className="mt-5">
         <Col xs={12} md={8}>
           <h2>About Me</h2>
@@ -20,7 +20,7 @@ function About() {
       </Row>
       <Row className="mt-5">
         <Col>
-          <h3>Skills</h3>
+          <h2>Skills</h2>
           <p>Here are some of the technologies and tools that I work with:</p>
           <div className="d-flex align-items-center">
             <FaReact size={50} className="mr-3" />
