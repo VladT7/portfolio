@@ -1,8 +1,9 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
+import ResumeButton from "./ResumeButton";
 function LandingPage() {
   return (
     <Row className="justify-content-center mt-3">
-      <Col xs={6} lg={12} className="text-center">
+      <Col xs={6} lg={8} className="text-center">
         <Image src="https://via.placeholder.com/150x150" roundedCircle />
         <h1 className="mt-3">Vlad Timofyeyev</h1>
         <p>
@@ -11,6 +12,7 @@ function LandingPage() {
           doloribus ea sequi quis debitis deserunt consequuntur. Autem tenetur
           error repellendus facilis?
         </p>
+        <ResumeButton></ResumeButton>
       </Col>
     </Row>
   );
