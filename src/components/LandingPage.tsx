@@ -8,12 +8,11 @@ function LandingPage() {
     <Row className="justify-content-center mt-3">
       <Col xs={6} lg={8} className="text-center">
         <Image src="https://via.placeholder.com/150x150" roundedCircle />
-        <h1 className="mt-3">Vlad Timofyeyev</h1>
+        <h1 className="mt-3">Hey, I'm Vlad 👋</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
-          iure reprehenderit maiores suscipit quasi, numquam eius sed quaerat,
-          doloribus ea sequi quis debitis deserunt consequuntur. Autem tenetur
-          error repellendus facilis?
+          When you have a vision in your mind, it must be executed flawlessly.
+          As a full-stack software engineer, I turn your ideas into reality with
+          precision and passion. Help your projects come to life - let's chat!
         </p>
         <ResumeButton></ResumeButton>
       </Col>

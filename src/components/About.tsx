@@ -7,11 +7,16 @@ function About() {
         <Col xs={12} md={8}>
           <h2>About Me</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            I take a personal approach to every project, ensuring that your
+            unique needs and goals are at the forefront of everything I do. By
+            collaborating closely with you throughout the development process, I
+            can deliver a final product that perfectly meets your requirements
+            and exceeds your expectations.
+            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             eleifend mauris auctor fringilla pretium. Vestibulum euismod, metus
             eu accumsan rutrum, nisi sapien luctus mi, sit amet gravida nisi
             nibh vel mauris. Ut imperdiet, libero vel tempor pretium, neque
-            augue suscipit magna, vel sagittis purus nunc nec augue.
+            augue suscipit magna, vel sagittis purus nunc nec augue. */}
           </p>
         </Col>
         <Col xs={12} md={4}>
