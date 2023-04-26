@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 function Footer() {
   return (
     <footer className="bg-dark text-muted py-3">
