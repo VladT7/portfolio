@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 
 function ResumeButton() {
   const handleClick = () => {
-    window.open("/path/to/pdf/document.pdf", "_blank");
+    window.open(process.env.PUBLIC_URL + "/media/resume.pdf", "_blank");
   };
   return (
     <Button

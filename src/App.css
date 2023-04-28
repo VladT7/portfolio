@@ -12,3 +12,30 @@
 .App {
   overflow-x: hidden;
 }
+
+.skill-section {
+  margin-bottom: 1rem;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.skill-item {
+  text-align: center;
+  margin: 0 1rem 1rem;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+[data-scroll] {
+  scroll-behavior: smooth;
+}

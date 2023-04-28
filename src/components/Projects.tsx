@@ -6,24 +6,36 @@ function Projects() {
       <Row className="mt-5">
         <Col xs={12} md={4}>
           <ProjectCard
-            title={"title"}
+            title={"Benevity Cosmic"}
             description={"A short description of project 1 goes here"}
             imageUrl={"https://via.placeholder.com/300x200"}
             projectUrl="https://www.google.com"
           ></ProjectCard>
-        </Col>
-        <Col xs={12} md={4}>
           <ProjectCard
-            title={"title"}
-            description={"A short description of project 2 goes here"}
+            title={"Flix"}
+            description={
+              "A full-stack application that allows users to search their local movie theatres and purchase tickets for their favourite movies."
+            }
             imageUrl={"https://via.placeholder.com/300x200"}
             projectUrl="https://www.google.com"
           ></ProjectCard>
         </Col>
         <Col xs={12} md={4}>
           <ProjectCard
-            title={"title"}
-            description={"A short description of project 3 goes here"}
+            title={"Fiberr"}
+            description={
+              "This app allows a user to enter their health goals, then scan any item in store and quickly check if it aligns with their objectives."
+            }
+            imageUrl={"https://via.placeholder.com/300x200"}
+            projectUrl="https://www.google.com"
+          ></ProjectCard>
+        </Col>
+        <Col xs={12} md={4}>
+          <ProjectCard
+            title={"Course Cart"}
+            description={
+              "A full-stack application that allows multiple students to register for university courses, based on their schedule and pre-requisites."
+            }
             imageUrl={"https://via.placeholder.com/300x200"}
             projectUrl="https://www.google.com"
           ></ProjectCard>
