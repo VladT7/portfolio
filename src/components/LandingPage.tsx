@@ -1,4 +1,4 @@
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import ResumeButton from "./ResumeButton";
 function LandingPage() {
   /**
@@ -14,7 +14,15 @@ function LandingPage() {
           As a full-stack software engineer, I turn your ideas into reality with
           precision and passion. Help your projects come to life - let's chat!
         </p>
-        <ResumeButton></ResumeButton>
+        <ResumeButton></ResumeButton>{" "}
+        <Button
+          variant="secondary"
+          size="lg"
+          style={{ marginBottom: 20 }}
+          // onClick={handleClick}
+        >
+          Get in touch
+        </Button>
       </Col>
     </Row>
   );
