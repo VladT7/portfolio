@@ -1,4 +1,3 @@
-import { HTMLAttributes } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 
 // interface FormProps extends HTMLAttributes<HTMLFormElement> {
