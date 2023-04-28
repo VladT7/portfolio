@@ -12,7 +12,12 @@ function Contact() {
           </Form.Group>
           <Form.Group controlId="formBasicMessage">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={5} placeholder="Enter message" />
+            <Form.Control
+              as="textarea"
+              rows={5}
+              placeholder="Enter message"
+              name="message"
+            />
           </Form.Group>
           <Button variant="primary" type="submit" style={{ marginTop: 20 }}>
             Submit
