@@ -55,7 +55,7 @@ function About() {
           <p>Here are some of the technologies and tools that I work with:</p>
 
           <div className="skill-section">
-            <h3>Languages</h3>
+            <h4>Languages</h4>
             <div className="skill-items">
               <div className="skill-item">
                 <FaPython size={50} className="mr-3" />
@@ -93,7 +93,7 @@ function About() {
           </div>
 
           <div className="skill-section">
-            <h3>Frameworks and Libraries</h3>
+            <h4>Frameworks and Libraries</h4>
             <div className="skill-items">
               <div className="skill-item">
                 <SiSpringboot size={50} className="mr-3" />
@@ -115,11 +115,11 @@ function About() {
           </div>
 
           <div className="skill-section">
-            <h3>Tools</h3>
+            <h4>Tools</h4>
             <div className="skill-items">
               <div className="skill-item">
                 <FaAws size={50} className="mr-3" />
-                <p>AWS (EC2, Elastic Beanstalk, RDS, Amplify, DynamoDB)</p>
+                <p>AWS</p>
               </div>
               <div className="skill-item">
                 <SiApachemaven size={50} className="mr-3" />
