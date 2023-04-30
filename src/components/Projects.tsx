@@ -16,14 +16,28 @@ function Projects() {
             description={
               <>
                 <p>
-                  "A full-stack application that allows users to search their
+                  A full-stack application that allows users to search their
                   local movie theatres and purchase tickets for their favourite
-                  movies."
+                  movies.
+                </p>
+                <p>
+                  This project was built as part of a group for a Systems
+                  Analysis and Software Engineering Design, and I was
+                  responsible for the seat selection and purchasing workflows,
+                  as well as data validation and error handling.
                 </p>
               </>
             }
+            features={[
+              "MVC",
+              "CRUD Operations",
+              "Input Validation",
+              "GUI",
+              "Admin Panel",
+            ]}
+            technologies={["Java ☕", "React ⚛️", "MySQL 🐬"]}
             imageUrl={"https://via.placeholder.com/300x200"}
-            projectUrl="https://www.google.com"
+            projectUrl="https://github.com/KBaldwin2/ENSF614Project"
           ></ProjectCard>
         </Col>
         <Col xs={12} md={4}>
