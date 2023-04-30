@@ -31,9 +31,9 @@ function ProjectCard({
               <div className="pill-container">
                 {features.map((feature, index) => (
                   <div key={index}>
-                    <Badge pill bg="secondary">
+                    <Badge pill bg="secondary" style={{ marginRight: 2 }}>
                       {feature}
-                    </Badge>{" "}
+                    </Badge>
                   </div>
                 ))}
               </div>
@@ -47,9 +47,9 @@ function ProjectCard({
               <div className="pill-container">
                 {technologies.map((technology, index) => (
                   <div key={index}>
-                    <Badge pill bg="secondary">
+                    <Badge pill bg="secondary" style={{ marginRight: 2 }}>
                       {technology}
-                    </Badge>{" "}
+                    </Badge>
                   </div>
                 ))}
               </div>

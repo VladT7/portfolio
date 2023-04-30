@@ -14,7 +14,13 @@ function Projects() {
           <ProjectCard
             title={"Flix"}
             description={
-              "A full-stack application that allows users to search their local movie theatres and purchase tickets for their favourite movies."
+              <>
+                <p>
+                  "A full-stack application that allows users to search their
+                  local movie theatres and purchase tickets for their favourite
+                  movies."
+                </p>
+              </>
             }
             imageUrl={"https://via.placeholder.com/300x200"}
             projectUrl="https://www.google.com"
@@ -24,10 +30,32 @@ function Projects() {
           <ProjectCard
             title={"Fiberr"}
             description={
-              "This app allows a user to enter their health goals, then scan any item in store and quickly check if it aligns with their objectives."
+              <>
+                <p>
+                  This app allows a user to enter their health goals, then scan
+                  any item in store and quickly check if it aligns with their
+                  objectives.
+                </p>
+                <p>
+                  This project was built in 48 hours as part of Hack the Change
+                  2022, and I was responsible for the UI design and prototyping.
+                </p>
+              </>
             }
-            imageUrl={"https://via.placeholder.com/300x200"}
-            projectUrl="https://www.google.com"
+            features={[
+              "Live Barcode Scanner",
+              "OpenFoodData API integration",
+              "Nutition Facts Display",
+              "Healthy food recommendations",
+            ]}
+            technologies={[
+              "React Native 📱",
+              "Python 🐍",
+              "Flask 🧪",
+              "OpenCV 📷",
+            ]}
+            imageUrl={"/media/fiberr.png"}
+            projectUrl="https://github.com/VladT7/HtCH22"
           ></ProjectCard>
         </Col>
         <Col xs={12} md={4}>
@@ -40,10 +68,17 @@ function Projects() {
                   register for university courses, based on their schedule and
                   pre-requisites.
                 </p>
+                <p>
+                  This project was built for the Advanced Architecture and
+                  Software Design course at the University of Calgary, and I was
+                  responsible for backend implementation of CRUD database
+                  operations, data architecture and validation, as well as error
+                  handling.
+                </p>
               </div>
             }
-            features={["hi", "hello"]}
-            technologies={["tech1", "tech2"]}
+            features={["MVC", "CRUD Operations", "Input Validation"]}
+            technologies={["Java ☕", "React ⚛️", "MySQL 🐬"]}
             imageUrl={"/media/courseCart.png"}
             projectUrl="https://github.com/VladT7/ENSF607project"
           ></ProjectCard>
