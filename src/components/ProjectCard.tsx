@@ -1,9 +1,11 @@
-import { Card } from "react-bootstrap";
+import { Card, Badge } from "react-bootstrap";
 import Button from "react-bootstrap/esm/Button";
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
+  features?: string[];
+  technologies?: string[];
   imageUrl: string;
   projectUrl: string;
 }
@@ -13,6 +15,8 @@ function ProjectCard({
   description,
   imageUrl,
   projectUrl,
+  features,
+  technologies,
 }: ProjectCardProps) {
   return (
     <Card style={{ marginBottom: 20 }}>
@@ -20,6 +24,38 @@ function ProjectCard({
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
+        {features && (
+          <>
+            <Card.Subtitle>Features</Card.Subtitle>
+            <Card.Text>
+              <div className="pill-container">
+                {features.map((feature, index) => (
+                  <div key={index}>
+                    <Badge pill bg="secondary">
+                      {feature}
+                    </Badge>{" "}
+                  </div>
+                ))}
+              </div>
+            </Card.Text>
+          </>
+        )}
+        {technologies && (
+          <>
+            <Card.Subtitle>Built with</Card.Subtitle>
+            <Card.Text>
+              <div className="pill-container">
+                {technologies.map((technology, index) => (
+                  <div key={index}>
+                    <Badge pill bg="secondary">
+                      {technology}
+                    </Badge>{" "}
+                  </div>
+                ))}
+              </div>
+            </Card.Text>
+          </>
+        )}
         <Button variant="primary" href={projectUrl}>
           Learn More
         </Button>

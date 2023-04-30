@@ -39,3 +39,7 @@
 [data-scroll] {
   scroll-behavior: smooth;
 }
+.pill-container {
+  display: flex;
+  flex-wrap: wrap;
+}

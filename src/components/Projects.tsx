@@ -34,10 +34,18 @@ function Projects() {
           <ProjectCard
             title={"Course Cart"}
             description={
-              "A full-stack application that allows multiple students to register for university courses, based on their schedule and pre-requisites."
+              <div>
+                <p>
+                  A full-stack application that allows multiple students to
+                  register for university courses, based on their schedule and
+                  pre-requisites.
+                </p>
+              </div>
             }
-            imageUrl={"https://via.placeholder.com/300x200"}
-            projectUrl="https://www.google.com"
+            features={["hi", "hello"]}
+            technologies={["tech1", "tech2"]}
+            imageUrl={"/media/courseCart.png"}
+            projectUrl="https://github.com/VladT7/ENSF607project"
           ></ProjectCard>
         </Col>
       </Row>
