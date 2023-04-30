@@ -7,9 +7,36 @@ function Projects() {
         <Col xs={12} md={4}>
           <ProjectCard
             title={"Benevity Cosmic"}
-            description={"A short description of project 1 goes here"}
+            description={
+              <>
+                <p>
+                  A full-stack web application that allows users to compile data
+                  on charity causes and recieve a link to the report via email.
+                </p>
+
+                <p>
+                  This project was completed during an internship term with
+                  Benevity, and I was responsible for the workflow which allows
+                  users to get a live preview of information on individual
+                  causes. The source code for this project is not available, but
+                  you can see more screenshots by clicking the button below.
+                </p>
+              </>
+            }
+            features={[
+              "Async API Calls",
+              "Email Integration",
+              "GUI",
+              "Batch Processing",
+              "CI/CD",
+              "Unit Testing",
+              "Admin Dashboard",
+              "App health monitoring",
+              "Storage management",
+            ]}
+            technologies={["Java ☕", "Vue.js 🖖", "AWS ☁️", "Docker 🐳"]}
             imageUrl={"https://via.placeholder.com/300x200"}
-            projectUrl="https://www.google.com"
+            projectUrl="#"
           ></ProjectCard>
           <ProjectCard
             title={"Flix"}
