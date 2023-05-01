@@ -6,7 +6,7 @@ function Projects() {
       <Row className="mt-5">
         <Col xs={12} md={4}>
           <ProjectCard
-            title={"Benevity Cosmic"}
+            title={"Benevity Causmic"}
             description={
               <>
                 <p>
@@ -35,7 +35,7 @@ function Projects() {
               "Storage management",
             ]}
             technologies={["Java ☕", "Vue.js 🖖", "AWS ☁️", "Docker 🐳"]}
-            imageUrl={"https://via.placeholder.com/300x200"}
+            imageUrl={"/media/b1.jpg"}
             projectUrl="#"
           ></ProjectCard>
           <ProjectCard
