@@ -28,26 +28,21 @@ function About() {
   return (
     <Container style={{ marginBottom: 20 }}>
       <Row className="mt-5">
-        <Col xs={12} md={8}>
-          <h2>About Me</h2>
-          <p>
-            I take a personal approach to every project, ensuring that your
-            unique needs and goals are at the forefront of everything I do. By
-            collaborating closely with you throughout the development process, I
-            can deliver a final product that perfectly meets your requirements
-            and exceeds your expectations.
-          </p>
+        <h2>About Me</h2>
+        <p>
+          I take a personal approach to every project, ensuring that your unique
+          needs and goals are at the forefront of everything I do. By
+          collaborating closely with you throughout the development process, I
+          can deliver a final product that perfectly meets your requirements and
+          exceeds your expectations.
+        </p>
 
-          <p>
-            My skills are built on a foundation of 4+ years of experience, and
-            my domain knowledge ranges from project management and mechanical
-            engineering to construction, utilities, and horticulture. I pride
-            myself on finding common ground with anyone I work with.
-          </p>
-        </Col>
-        <Col xs={12} md={4}>
-          <Image src="https://via.placeholder.com/300x400" fluid rounded />
-        </Col>
+        <p>
+          My skills are built on a foundation of 4+ years of experience, and my
+          domain knowledge ranges from project management and mechanical
+          engineering to construction, utilities, and horticulture. I pride
+          myself on finding common ground with anyone I work with.
+        </p>
       </Row>
       <Row className="mt-5">
         <Col>
