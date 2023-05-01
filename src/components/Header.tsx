@@ -1,10 +1,18 @@
 import { Navbar, Container } from "react-bootstrap";
 import Nav from "react-bootstrap/esm/Nav";
+import logo from "../media/logo.png";
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="md">
+    <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">VTIMOF</Navbar.Brand>
+        <Navbar.Brand>
+          <img
+            src={logo}
+            height="30"
+            className="d-inline-block align-top"
+            alt="VTIMOF logo"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
