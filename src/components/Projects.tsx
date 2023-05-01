@@ -4,6 +4,7 @@ function Projects() {
   return (
     <Container>
       <Row className="mt-5">
+        <h2>My work</h2>
         <Col xs={12} md={4}>
           <ProjectCard
             title={"Benevity Causmic"}
