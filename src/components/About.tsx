@@ -41,7 +41,14 @@ function About() {
           My skills are built on a foundation of 4+ years of experience, and my
           domain knowledge ranges from project management and mechanical
           engineering to construction, utilities, and horticulture. I pride
-          myself on finding common ground with anyone I work with.
+          myself on finding common ground with anyone I work with, and getting
+          down to the root of the problem.
+        </p>
+
+        <p>
+          Outside of work, you'll find me playing disc golf, mountain biking,
+          backcountry skiing, or playing soccer (although poorly). Ask me about
+          bike & car repair, Vim, meal prepping, or my favourite podcasts!
         </p>
       </Row>
       <Row className="mt-5">
