@@ -3,24 +3,22 @@ import ProjectCard from "./ProjectCard";
 import ScreenshotCarousel from "./ScreenshotCarousel";
 import { useState } from "react";
 
-const portfolioItems = [
-  {
-    name: "My First App",
-    screenshots: [
-      "https://example.com/screenshots/1.png",
-      "https://example.com/screenshots/2.png",
-      "https://example.com/screenshots/3.png",
-    ],
-  },
-  {
-    name: "My Second App",
-    screenshots: [
-      "https://example.com/screenshots/4.png",
-      "https://example.com/screenshots/5.png",
-      "https://example.com/screenshots/6.png",
-    ],
-  },
-];
+const portfolioItems = {
+  name: "Benevity Causmic",
+  screenshots: [
+    "/media/benevity/bs1.png",
+    "/media/benevity/bs2.png",
+    "/media/benevity/bs3.png",
+    "/media/benevity/bs4.png",
+  ],
+
+  descriptions: [
+    "Application homepage, which prompts the user to specify the parameters for their report, upload a CSV file of the charity causes they would like to look up, and enter their email to get the report straight to their inbox.",
+    "If the user wants to look up information for a single cause, they can do so on this page.",
+    "The results page, which displays the information for the single cause user specified. ",
+    "Application use statistics, which allows users to find their previous requests and download them again, in case they deleted the email with the report.",
+  ],
+};
 
 function Projects() {
   const [show, setShow] = useState(false);
@@ -34,7 +32,7 @@ function Projects() {
 
         {show ? (
           <ScreenshotCarousel
-            item={portfolioItems[0]}
+            item={portfolioItems}
             show={show}
             handleClose={handleClose}
           />
