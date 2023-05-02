@@ -15,7 +15,7 @@ function LandingPage() {
           As a full-stack software engineer, I turn your ideas into reality with
           precision and passion. Help your projects come to life - let's chat!
         </p>
-        <ResumeButton></ResumeButton>
+        <ResumeButton></ResumeButton>{" "}
         <Link to="contact" smooth={true} duration={10}>
           <Button variant="secondary" size="lg" style={{ marginBottom: 20 }}>
             Get in touch

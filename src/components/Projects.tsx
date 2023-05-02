@@ -1,10 +1,47 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import ScreenshotCarousel from "./ScreenshotCarousel";
+import { useState } from "react";
+
+const portfolioItems = [
+  {
+    name: "My First App",
+    screenshots: [
+      "https://example.com/screenshots/1.png",
+      "https://example.com/screenshots/2.png",
+      "https://example.com/screenshots/3.png",
+    ],
+  },
+  {
+    name: "My Second App",
+    screenshots: [
+      "https://example.com/screenshots/4.png",
+      "https://example.com/screenshots/5.png",
+      "https://example.com/screenshots/6.png",
+    ],
+  },
+];
+
 function Projects() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Container>
       <Row className="mt-5">
         <h2>My work</h2>
+
+        {show ? (
+          <ScreenshotCarousel
+            item={portfolioItems[0]}
+            show={show}
+            handleClose={handleClose}
+          />
+        ) : (
+          <></>
+        )}
+
         <Col xs={12} md={4}>
           <ProjectCard
             title={"Benevity Causmic"}
@@ -37,7 +74,7 @@ function Projects() {
             ]}
             technologies={["Java ☕", "Vue.js 🖖", "AWS ☁️", "Docker 🐳"]}
             imageUrl={"/media/b1.jpg"}
-            projectUrl="#"
+            onClick={handleShow}
           ></ProjectCard>
           <ProjectCard
             title={"Flix"}
