@@ -43,3 +43,29 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+input,
+textarea {
+  padding: 5px;
+  border: solid 1px #e5e5e5;
+  outline: 0;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+textarea {
+  line-height: 150%;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: #c9c9c9;
+}
+
+.form label {
+  margin-left: 10px;
+  color: #999999;
+}

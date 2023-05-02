@@ -13,8 +13,9 @@ function LandingPage() {
         <p>
           When you have a vision in your mind, it must be executed flawlessly.
           As a full-stack software engineer, I turn your ideas into reality with
-          precision and passion. Help your projects come to life - let's chat!
+          precision and passion.
         </p>
+        <p>Help your projects come to life - let's chat!</p>
         <ResumeButton></ResumeButton>{" "}
         <Link to="contact" smooth={true} duration={10}>
           <Button variant="secondary" size="lg" style={{ marginBottom: 20 }}>

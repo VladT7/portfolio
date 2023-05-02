@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="md" sticky="top">
+    <Navbar bg="dark" variant="dark" expand="md" fixed="top">
       <Container>
         <Navbar.Brand>
           <img
@@ -30,7 +30,7 @@ function Header() {
               Resume
             </Nav.Link>
             <Link to="contact" smooth={true} duration={10}>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <Nav.Link>Contact</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
