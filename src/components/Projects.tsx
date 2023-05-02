@@ -1,10 +1,45 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import ScreenshotCarousel from "./ScreenshotCarousel";
+import { useState } from "react";
+
+const portfolioItems = {
+  name: "Benevity Causmic",
+  screenshots: [
+    "/media/benevity/bs1.png",
+    "/media/benevity/bs2.png",
+    "/media/benevity/bs3.png",
+    "/media/benevity/bs4.png",
+  ],
+
+  descriptions: [
+    "Application homepage, which prompts the user to specify the parameters for their report, upload a CSV file of the charity causes they would like to look up, and enter their email to get the report straight to their inbox.",
+    "If the user wants to look up information for a single cause, they can do so on this page.",
+    "The results page, which displays the information for the single cause user specified. ",
+    "Application use statistics, which allows users to find their previous requests and download them again, in case they deleted the email with the report.",
+  ],
+};
+
 function Projects() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Container>
       <Row className="mt-5">
         <h2>My work</h2>
+
+        {show ? (
+          <ScreenshotCarousel
+            item={portfolioItems}
+            show={show}
+            handleClose={handleClose}
+          />
+        ) : (
+          <></>
+        )}
+
         <Col xs={12} md={4}>
           <ProjectCard
             title={"Benevity Causmic"}
@@ -37,7 +72,7 @@ function Projects() {
             ]}
             technologies={["Java ☕", "Vue.js 🖖", "AWS ☁️", "Docker 🐳"]}
             imageUrl={"/media/b1.jpg"}
-            projectUrl="#"
+            onClick={handleShow}
           ></ProjectCard>
           <ProjectCard
             title={"Flix"}

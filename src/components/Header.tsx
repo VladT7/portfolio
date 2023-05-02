@@ -1,6 +1,8 @@
 import { Navbar, Container } from "react-bootstrap";
 import Nav from "react-bootstrap/esm/Nav";
 import logo from "../media/logo.png";
+import { Link } from "react-scroll";
+
 function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
@@ -27,7 +29,9 @@ function Header() {
             >
               Resume
             </Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
+            <Link to="contact" smooth={true} duration={10}>
+              <Nav.Link href="#link">Contact</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
