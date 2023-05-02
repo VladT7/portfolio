@@ -10,7 +10,7 @@ function Contact() {
           data-netlify="true"
           name="contact"
           method="POST"
-          on-submit="submit"
+          // on-submit="submit"
         >
           <Form.Control
             type="text"
