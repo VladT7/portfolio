@@ -1,44 +1,35 @@
-import { Container, Form, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function Contact() {
   return (
     <div id="contact">
       <Container style={{ marginBottom: 20 }}>
         <h2>Contact Me</h2>
-        <Form
-          className="mt-5"
-          data-netlify="true"
-          name="contact"
-          method="POST"
-          // on-submit="submit"
-        >
-          <Form.Control
-            type="text"
-            placeholder="Enter name"
-            name="name"
-            id="name"
-            style={{ marginBottom: 10 }}
-          />
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            name="email"
-            id="email"
-            netlify-honeypot="bot-field"
-            style={{ marginBottom: 10 }}
-          />
-          <Form.Control
-            as="textarea"
-            rows={5}
-            id="message"
-            placeholder="Enter message"
-            name="message"
-            style={{ marginBottom: 10 }}
-          />
-          <Button variant="primary" type="submit" style={{ marginTop: 20 }}>
-            Submit
-          </Button>
-        </Form>
+        <p>
+          Interested in working together? Fill out the form below or shoot me an
+          email at <a href="mailto:vladt13@gmail.com">vladt13@gmail.com</a>!
+        </p>
+        <form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </Container>
     </div>
   );
