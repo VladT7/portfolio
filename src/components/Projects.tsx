@@ -99,7 +99,7 @@ function Projects() {
               "Admin Panel",
             ]}
             technologies={["Java ☕", "React ⚛️", "MySQL 🐬"]}
-            imageUrl={"https://via.placeholder.com/300x200?text=Coming+soon!"}
+            imageUrl={"/media/flix.png"}
             projectUrl="https://github.com/KBaldwin2/ENSF614Project"
           ></ProjectCard>
         </Col>
