@@ -17,7 +17,7 @@ function ScreenshotCarousel({ item, show, handleClose }: Props) {
     <Modal show={show} onHide={handleClose} size="lg">
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        <Carousel>
+        <Carousel variant="dark">
           {item.screenshots.map((src, index, description) => (
             <Carousel.Item key={index}>
               <img

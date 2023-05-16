@@ -105,6 +105,35 @@ function Projects() {
         </Col>
         <Col xs={12} md={4}>
           <ProjectCard
+            title={"PathwayPro"}
+            description={
+              <>
+                <p>
+                  PathwayPro is an online program designed for highly-skilled
+                  immigrant tech professionals in Alberta. It offers real
+                  software development projects, mentorship, and competency
+                  development to bridge the talent gap and empower immigrants to
+                  thrive in the local tech ecosystem.
+                </p>
+
+                <p>
+                  This site was successfully launched in May 2023, and I worked
+                  closely with the client to ensure their desires were met
+                  during an extremely fast turnaround.
+                </p>
+              </>
+            }
+            features={[
+              "Hosting",
+              "Graphic Design",
+              "Responsive Design",
+              "Form submissions",
+            ]}
+            imageUrl={"/media/pathwaypro.png"}
+            projectUrl="https://pathwaypro.ca"
+            buttonText="Visit Site"
+          ></ProjectCard>
+          <ProjectCard
             title={"Fiberr"}
             description={
               <>
@@ -122,7 +151,7 @@ function Projects() {
             features={[
               "Live Barcode Scanner",
               "OpenFoodData API integration",
-              "Nutition Facts Display",
+              "Nutrition Facts Display",
               "Healthy food recommendations",
             ]}
             technologies={[

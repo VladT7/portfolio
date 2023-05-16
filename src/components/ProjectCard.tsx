@@ -9,6 +9,7 @@ interface ProjectCardProps {
   imageUrl: string;
   projectUrl?: string;
   onClick?: () => void;
+  buttonText?: string;
 }
 
 function ProjectCard({
@@ -19,6 +20,7 @@ function ProjectCard({
   features,
   technologies,
   onClick,
+  buttonText,
 }: ProjectCardProps) {
   return (
     <Card style={{ marginBottom: 20 }}>
@@ -60,11 +62,11 @@ function ProjectCard({
         )}
         {projectUrl ? (
           <Button variant="primary" href={projectUrl}>
-            Source Code
+            {buttonText ? buttonText : "Source Code"}
           </Button>
         ) : (
           <Button variant="primary" onClick={onClick}>
-            See Screenshots
+            {buttonText ? buttonText : "See Screenshots"}
           </Button>
         )}
       </Card.Body>
